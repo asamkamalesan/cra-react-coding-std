@@ -3,7 +3,7 @@
   "version": "1.0.1",
   "main": "index.js",
   "bin": {
-    "cra-react-coding-std": "./setup.js"
+    "cra-react-coding-std": "setup.js"
   },
   "scripts": {
     "test": "jest",
