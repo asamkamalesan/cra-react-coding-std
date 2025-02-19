@@ -2,14 +2,18 @@
   "name": "cra-react-coding-std",
   "version": "1.0.0",
   "main": "index.js",
+  "bin": {
+    "cra-react-coding-std": "./setup.js"
+  },
   "scripts": {
     "test": "jest",
     "lint": "eslint src --fix",
-    "format": "prettier --write ."
+    "format": "prettier --write .",
+    "postinstall": "node setup.js"
   },
   "keywords": [],
   "author": "Sam Kamalesan",
-  "license": "ISC",
+  "license": "MIT",
   "description": "",
   "dependencies": {
     "react": "^19.0.0",
