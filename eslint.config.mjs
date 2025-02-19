@@ -25,15 +25,11 @@ export default [
       react,
       prettier,
     },
-    settings: {
-      react: {
-        version: 'detect',
-      },
-    },
 
     languageOptions: {
       globals: {
         ...globals.browser,
+        ...globals.jest,
       },
 
       ecmaVersion: 12,
@@ -46,8 +42,14 @@ export default [
       },
     },
 
+    settings: {
+      react: {
+        version: 'detect',
+      },
+    },
+
     rules: {
-      'prettier/prettier': ['error'],
+      'prettier/prettier': 'error',
       'react/prop-types': 'off',
     },
   },
